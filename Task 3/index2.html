@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <title>Task 3 Bacolod</title>
+</head>
+<body class="#e3f2fd blue lighten-5">
+    <div class="header">Circular Image</div>
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel #42a5f5 #c51162 pink accent-4 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="img/pic5.jpg" alt="" class="circle responsive-img"> 
+            </div>
+            <div class="col s10">
+              <span class="white-text">
+                This is a responsive circular images
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="header">Slider</div>
+    <div class="slider">
+        
+        <ul class="slides">
+          <li>
+            <img src="img/pic7.jpg"> 
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Programming is Amazing</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/pic8.jpg"> 
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Programming is Wonderful</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/pic9.jpg">
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Programming is Awesome</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/pic10.jpg">
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Programming is Good</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="header">Responsive Videos</div>
+      <video class="responsive-video" controls>
+        <source src="img/aos.mp4" type="video/mp4">
+      </video>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems);
+        });
+    </script>
+</body>
+</html>
